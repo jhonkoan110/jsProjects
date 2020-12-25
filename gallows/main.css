@@ -1,0 +1,84 @@
+html {
+    font-size: 15px;
+}
+body {
+    background-color: #DAA520;
+}
+
+.wrapper {
+    padding: 1rem;
+    margin: 30px auto;
+    background-color: #000;
+    border-radius: 10px;
+    max-width: 1000px;
+    min-width: 400px;
+    width: 60%;
+    box-shadow: 4px 4px 10px black;
+    color: gold;
+    text-align: center;
+    font-family: sans-serif;
+}
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 2rem;
+}
+#answer {
+    font-size: 3rem;
+}
+@media screen and (max-width: 1020px) {
+    #answer {
+        font-size: 2rem;
+    }
+}
+
+#input {
+    display: block;
+    margin: 20px auto;
+    background-color: #000;
+    color: gold;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+#input::placeholder {
+    color:  #DAA520;
+}
+
+#input:focus {
+    border-bottom: 2px solid gold;
+}
+
+#tryBtn, #reload{
+    border: 3px solid #DAA520;
+    border-radius: 5px;
+    background-color: #000;
+    color: gold;
+    padding: 1rem;
+    font-size: 2rem;
+    outline: none;
+    margin: 0 auto;
+
+    box-shadow: 0px 0px 10px gold;
+
+    cursor: pointer;
+    transition: background-color .1s linear;
+}
+#tryBtn:hover, #reload:hover {
+    background-color: #DAA520;
+    color: #000;
+}
+#tryBtn:active, #reload:active {
+    box-shadow: none;
+}
+
+
+#canvas {
+    margin: 1.33rem auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+}
